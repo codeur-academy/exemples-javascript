@@ -1,0 +1,14 @@
+<div id="app"></div>
+ 
+<script type="text/javascript">
+   // Babel Input: ES2015 arrow function
+var v1 = [1, 2, 3].map((n) => n + 1);
+document.getElementById("app").innerHTML +=  v1  ;
+
+// Babel Output: ES5 equivalent
+var v2 = [1, 2, 3].map(function(n) {
+  return n + 1;
+});
+document.getElementById("app").innerHTML += "<br>"
+document.getElementById("app").innerHTML +=  v1
+</script>
