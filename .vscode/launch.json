@@ -9,7 +9,13 @@
             "request": "launch",
             "name": "Exemple JavaScript",
             "url": "http://127.0.0.1:5500/"
-        }
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Prototype calculatrice",
+            "url": "http://127.0.0.1:5500/prototype-calculatrice/prototype1.html"
+        },
         {
             "type": "pwa-chrome",
             "request": "launch",
