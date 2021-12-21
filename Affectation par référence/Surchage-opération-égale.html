@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// Introduction
+//  function change(a,b){
+//      var c = a;
+//      b = a;
+//      a = c;
+//  }
+
+// Problématique
+//  let tab = [1,2,3,4];
+//  console.log(tab);
+//  change (tab[0],tab[3])
+//  [tab[0],tab[3]] =  [tab[3],tab[0]]
+//  console.log(tab);
+
+// Question : pourquoi les valeurs t[0] et t[3] sont échangés.
+
+// Explication : Surchage d'opérateur égale pour [var,var] = Array
+// Exemple 1
+// var x,y;
+// [x,y] = [1,2];
+// console.log(x,y);
+
+//  Explication : [x,y] = [y,x]  ====> surcharge_affectation(y,x,x,y);
+//   function change(x by ref, y by ref, a , b){
+//          x = a,
+//         y = b
+//  }
+
+// Attention
+var x,y;
+x = 1;
+y = 2;
+t=[x,y];
+v= [y,x];
+v=t;  // Affectation par référence , 
+// v var prendre la référence de t, 
+// les valeurs et référence de v seront perdu
+
+console.log(v)
+console.log(t)
+console.log(x)
+console.log(y)
+
+</script>
+</body>
+</html>
